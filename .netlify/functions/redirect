@@ -1,4 +1,5 @@
-export async function handler(event) {
+// .netlify/functions/redirect.js
+exports.handler = async (event) => {
     const baseUrl = 'gavigardin.com'; // Replace with your actual base URL
     const path = event.path;
     let location = path.replace('#', '');
@@ -19,5 +20,5 @@ export async function handler(event) {
         Location: `${baseUrl}${location}`,
       }
     };
-  }
+  };
   
