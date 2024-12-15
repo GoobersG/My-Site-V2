@@ -1,0 +1,57 @@
+/* Color Gradient Dividers */
+.color-divider {
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(
+        to right, 
+        #ff6b6b, 
+        #4ecdc4, 
+        #45b7d1, 
+        #f9d5e5, 
+        #eeac99
+    );
+    margin: 20px 0;
+    background-size: 500% 100%;
+    animation: gradient-shift 10s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Project Card Enhancements */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Additional Styling Enhancements */
+body {
+    background: linear-gradient(135deg, #121212, #1c1c1c);
+    color: #e0e0e0;
+}
+
+#rick {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+.modal-title{
+    color: rgb(0, 0, 0);
+}
+.modal-body{
+    color: rgb(0, 0, 0);
+}
