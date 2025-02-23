@@ -10,35 +10,36 @@
     <link href="static/gavi_bm_logo_icon.ico" rel="icon">
     <link href="static/styles.css" rel="stylesheet">
     <script src="static/homepage.js"></script>
-    
+
     <meta name="description" content="I'm Gavriel Gardin, a 15-year-old tech enthusiast from Jerusalem. Passionate about coding, astronomy, science, and everything tech-related. Explore my projects and portfolio.">
-    
+
     <title>Gavriel Gardin</title>
 
-<!-- Structured Data for Google Knowledge Panel -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Gavriel Gardin",
-  "image": "https://ik.imagekit.io/5r8medlt5/IMG_8070.JPG?updatedAt=1738609224727",
-  "url": "https://gavigardin.com",
-  "description": "15-year-old tech enthusiast from Jerusalem, passionate about coding, astronomy, and science.",
-  "sameAs": [
-    "https://github.com/GoobersG",
-    "https://www.instagram.com/itzgoobers/"
-  ]
-}
-</script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gavriel Gardin",
+      "image": ["https://ik.imagekit.io/5r8medlt5/IMG_8070.JPG?updatedAt=1738609224727"],
+      "url": "https://gavigardin.com",
+      "description": "15-year-old tech enthusiast from Jerusalem, passionate about coding, astronomy, and science.",
+      "birthDate": "2009-07-29",
+      "sameAs": [
+        "https://github.com/GoobersG",
+        "https://www.instagram.com/itzgoobers/",
+        "https://twitter.com/itzgoobers",
+        "https://www.linkedin.com/in/gavigardin/"
+      ]
+    }
+    </script>
 </head>
 
-
 <body class="p-0">
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
         <div class="container-fluid">
             <a class="navbar-brand" onclick="secret()">
-                <img src="static/gavi_bm_logo_icon.ico" alt="" width="45" height="45" style="border-radius: 8px;">
+                <img src="static/gavi_bm_logo_icon.ico" alt="Gavriel Gardin Logo" width="45" height="45" style="border-radius: 8px;">
             </a>
             <a class="navbar-brand" onclick="secret()">Gavriel Gardin</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,10 +51,10 @@
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="scrollToSection('projects')">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="scrollToSection('contact')">Contact Me</a>
+                        <a class="nav-link" href="#contact">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -67,10 +68,10 @@
             <div class="col-lg-6">
                 <h1 class="display-4">Yep, This Is Me!</h1>
                 <p class="lead">Hi, I'm Gavriel (also known as Gavi Gardin). I'm passionate about technology, design, and creating exciting projects. This is my space to share my journey—my projects, hobbies, and everything in between!</p>
-                <a onclick="scrollToSection('about-me')" class="btn btn-outline-primary btn-lg">Me</a>
+                <a href="#about-me" class="btn btn-outline-primary btn-lg">Me</a>
             </div>
             <div class="col-lg-6">
-                <img src="https://ik.imagekit.io/5r8medlt5/IMG_8070.JPG?updatedAt=1738609224727" class="img-fluid rounded-circle shadow" alt="Gavi Gardin">
+                <img src="https://ik.imagekit.io/5r8medlt5/IMG_8070.JPG?updatedAt=1738609224727" alt="Gavi Gardin Portrait" class="img-fluid rounded-circle shadow">
             </div>
         </div>
 
@@ -84,10 +85,10 @@
             <div class="col-md-6">
                 <h3>Skills & Interests</h3>
                 <ul>
-                    <li><strong>Coding</strong> – I work with Python, SQL, Flask, HTML, CSS, as well as some C and JavaScript</li>
-                    <li><strong>Design</strong> – Crafting clean and intuitive user experiences with a focus on UI/UX</li>
-                    <li><strong>Technology Enthusiast</strong> – Keeping up with the latest gadgets, trends, and software</li>
-                    <li><strong>Space Exploration</strong> – Fascinated by the cosmos and the mysteries of the universe</li>
+                    <li><strong>Coding</strong> – Python, SQL, Flask, HTML, CSS, C, JavaScript</li>
+                    <li><strong>Design</strong> – UI/UX focused, clean interfaces</li>
+                    <li><strong>Technology</strong> – Latest gadgets and trends</li>
+                    <li><strong>Space Exploration</strong> – Cosmic enthusiast</li>
                 </ul>
             </div>
         </div>
@@ -102,9 +103,9 @@
                 <div class="card h-100 bg-dark text-light">
                     <div class="card-body">
                         <h5 class="card-title">Inventory Management System</h5>
-                        <p class="card-text">A comprehensive Python-based inventory manager utilizing SQLite and Tkinter for efficient tracking and management.</p>
+                        <p class="card-text">Python-based inventory manager with SQLite and Tkinter.</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <a href="https://github.com/GoobersG/PyVentory" target="_blank" class="btn btn-outline-primary">View Project</a>
+                            <a href="https://github.com/GoobersG/PyVentory" target="_blank" rel="noopener" class="btn btn-outline-primary">View Project</a>
                             <span class="badge bg-success">Python</span>
                         </div>
                     </div>
@@ -114,7 +115,7 @@
                 <div class="card h-100 bg-dark text-light">
                     <div class="card-body">
                         <h5 class="card-title">Personal Website</h5>
-                        <p class="card-text">My personal portfolio website built with HTML, CSS, and Bootstrap, showcasing my skills, projects, and personal brand.</p>
+                        <p class="card-text">Portfolio built with HTML, CSS, and Bootstrap.</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <a href="/" class="btn btn-outline-primary">Explore</a>
                             <span class="badge bg-info">HTML/CSS</span>
@@ -126,9 +127,9 @@
                 <div class="card h-100 bg-dark text-light">
                     <div class="card-body">
                         <h5 class="card-title">Future Projects</h5>
-                        <p class="card-text">Continuously exploring and developing new technologies. Stay tuned for upcoming innovative projects!</p>
+                        <p class="card-text">Stay tuned for new developments!</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <a href="https://github.com/GoobersG" target="_blank" class="btn btn-outline-primary">GitHub</a>
+                            <a href="https://github.com/GoobersG" target="_blank" rel="noopener" class="btn btn-outline-primary">GitHub</a>
                             <span class="badge bg-warning">Coming Soon</span>
                         </div>
                     </div>
@@ -145,16 +146,16 @@
                     <input type="hidden" name="contact_number" value="697483">
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="user_name" class="form-label text-light">Your Name</label>
-                            <input type="text" class="form-control bg-secondary text-light" placeholder="Your Name" id="user_name" name="user_name" required>
+                            <label for="user_name" class="form-label text-light">Name</label>
+                            <input type="text" class="form-control bg-secondary text-light" id="user_name" name="user_name" required>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="user_email" class="form-label text-light">Your Email</label>
-                            <input type="email" class="form-control bg-secondary text-light" placeholder="Your Email" id="user_email" name="user_email" required>
+                            <label for="user_email" class="form-label text-light">Email</label>
+                            <input type="email" class="form-control bg-secondary text-light" id="user_email" name="user_email" required>
                         </div>
                         <div class="col-md-12 mb-3">
-                            <label for="message" class="form-label text-light">Your Message</label>
-                            <textarea class="form-control bg-secondary text-light" id="message" placeholder="Your Message" name="user_message" rows="10" required></textarea>
+                            <label for="message" class="form-label text-light">Message</label>
+                            <textarea class="form-control bg-secondary text-light" id="message" name="user_message" rows="10" required></textarea>
                         </div>
                         <div class="col-md-12 text-center">
                             <input type="submit" class="btn btn-outline-light mt-4 btn-lg" value="Send Message" id="submit-btn">
@@ -169,31 +170,29 @@
 
         <section id="socials">
             <div class="container py-5">
-                <h2 class="text-center mb-4">Other Ways To Connect</h2>
+                <h2 class="text-center mb-4">Connect With Me</h2>
                 <div class="row mt-5">
                     <div class="col-md-6">
                         <h3 class="text-light">Email</h3>
                         <p>
-                            You can reach me directly via email:
                             <a href="mailto:gavigardin@gmail.com" class="contact-link">gavigardin@gmail.com</a>
                         </p>
                     </div>
                     <div class="col-md-6">
                         <h3 class="text-light">Social Media</h3>
-                        <p>Feel free to connect with me on social media:</p>
                         <ul class="list-unstyled">
                             <li class="mb-2">
-                                <a href="https://www.instagram.com/itzgoobers/" target="_blank" class="contact-link">
+                                <a href="https://www.instagram.com/itzgoobers/" target="_blank" rel="noopener" class="contact-link">
                                     <i class="fab fa-instagram"></i> Instagram
                                 </a>
                             </li>
                             <li class="mb-2">
-                                <a href="https://twitter.com/itzgoobers/" target="_blank" class="contact-link">
+                                <a href="https://twitter.com/itzgoobers/" target="_blank" rel="noopener" class="contact-link">
                                     <i class="fab fa-twitter"></i> Twitter
                                 </a>
                             </li>
                             <li class="mb-2">
-                                <a href="https://www.linkedin.com/in/gavigardin/" target="_blank" class="contact-link">
+                                <a href="https://www.linkedin.com/in/gavigardin/" target="_blank" rel="noopener" class="contact-link">
                                     <i class="fab fa-linkedin"></i> LinkedIn
                                 </a>
                             </li>
@@ -207,32 +206,32 @@
     <footer class="bg-dark text-center text-light p-4">
         <div class="container">
             <section class="mb-3">
-                <a id="social" class="btn btn-link btn-floating btn-lg text-light m-1" href="https://x.com/ItzGoobers" role="button" aria-label="Twitter">
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://x.com/ItzGoobers" role="button" aria-label="Twitter">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a id="social" class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.instagram.com/itzgoobers/" role="button" aria-label="Instagram">
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.instagram.com/itzgoobers/" role="button" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a id="social" class="btn btn-link btn-floating btn-lg text-light m-1" href="https://github.com/GoobersG" role="button" aria-label="GitHub">
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://github.com/GoobersG" role="button" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                
             </section>
             <div class="text-light">
                 <a id="rick">© 2025 Gavriel Gardin</a>
             </div>
         </div>
     </footer>
-    
+
+    <!-- Modal -->
     <div class="modal fade" id="secretModal" tabindex="-1" aria-labelledby="secretModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="secretModalLabel">Secret</h5>
+                    <h5 class="modal-title" id="secretModalLabel">Secret Found!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    You Found Me!
+                    🎉 Congratulations! You discovered the secret!
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -243,44 +242,39 @@
 
     <script>
         function scrollToSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-    }
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("1JN8V7dSwajBFMI7f");
+        })();
 
-<script type="text/javascript">
-    (function() {
-        emailjs.init("1JN8V7dSwajBFMI7f");
-    })();
+        window.onload = function() {
+            const form = document.getElementById('contact-form');
+            const submitButton = document.getElementById('submit-btn');
+            const formStatus = document.getElementById('form-status');
 
-    window.onload = function() {
-        const form = document.getElementById('contact-form');
-        const submitButton = document.getElementById('submit-btn');
-        const formStatus = document.getElementById('form-status');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();  
+                submitButton.disabled = true;
+                formStatus.innerHTML = "<p class='text-warning'>Sending message...</p>";
 
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();  
-
-            submitButton.disabled = true;
-            formStatus.innerHTML = "<p class='text-warning'>Please wait while we send your message. Do not submit again.</p>";
-
-            emailjs.sendForm('service_habymgh', 'template_lp4s6lg', this)
-                .then((response) => {
-                    console.log('SUCCESS!', response);
-                    formStatus.innerHTML = "<p class='text-success'>Message sent successfully!</p>";
-                    form.reset();
-                }, (error) => {
-                    console.log('FAILED...', error);
-                    formStatus.innerHTML = "<p class='text-danger'>Oops! Something went wrong. Please try again later.</p>";
-                })
-                .finally(() => {
-                    formStatus.innerHTML = "<p class='text-success'>Message sent successfully! I will get back to you ASAP.</p>";
-                });
-        });
-    };
-</script>
-
+                emailjs.sendForm('service_habymgh', 'template_lp4s6lg', this)
+                    .then(() => {
+                        formStatus.innerHTML = "<p class='text-success'>Message sent successfully!</p>";
+                        form.reset();
+                    })
+                    .catch(() => {
+                        formStatus.innerHTML = "<p class='text-danger'>Error sending message</p>";
+                    })
+                    .finally(() => {
+                        submitButton.disabled = false;
+                    });
+            });
+        };
+    </script>
 </body>
-
 </html>
